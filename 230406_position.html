@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>position연습</title>
+  <style>
+
+      /* 예제와 비슷하게 만들었으나 똑같은 결과물을 완성하지 못해서 아쉬움ㅠㅠ
+    스크롤바 값은 줬는데 왜 적용되지 않는걸까 어렵다 어려워 갈길이 멀ㄷr....!!!! */
+    
+    body{
+      margin: 0 auto;
+    }
+    a{
+      text-decoration: none;
+    }
+    menu{
+      list-style: none;
+    }
+    li{
+      display: inline-block;
+    }
+
+   /* header */
+    header {
+      background-color: rgb(61, 221, 167);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      width: 1200px; height: 80px;
+      
+      position: fixed;
+      top: 0;
+      right: 0;left: 0;
+      margin: auto;
+    }
+
+    /* 로고 */
+    header h1{
+      background-color: rgb(236, 214, 122);
+      width: 80px; height: 40px;
+      line-height: 40px;
+      font-size: 20px;
+
+      position: absolute;
+      bottom:0; left: 100px;
+    }
+    header h1 a{
+      color: red;
+    }
+
+    /* 유틸 */
+    header .utill{
+      background-color: palevioletred;
+      position: absolute;
+      right: 180px; top: 0;
+      margin: 0; padding: 4px;
+    }
+    header .utill li a{
+      color: #fff;
+      font-size: 12px;
+    }
+    header .utill li a:hover{
+      background-color: red;
+    }
+
+    /* 메뉴 */
+    header .gnb{
+      background-color: orange;
+      padding: 6px; margin: 0;
+
+      position: absolute;
+      right: 180px; bottom: 10px;
+    }
+    header .gnb  li a{
+      text-transform: capitalize;
+      color: #fff;
+      font-weight: bold;
+      display: block;
+    }
+    header .gnb li a:hover{
+      background-color: darkcyan; /*마우스 이벤트 bg 전체 색상 나오게 값 적용 실패*/
+    }
+   
+    /* 메인 */
+    main{
+      background-color: gainsboro;
+      text-align: center;
+      font-weight: bold;
+      font-size: 40px;
+      height: 100px;
+      padding-top: 80px;
+      margin:  auto;
+    }
+
+    html{
+  scroll-behavior: smooth;
+  }
+  body::-webkit-scrollbar{
+    widwth:10px;
+  }
+  body::-webkit-scrollbar-track{
+    background-color: blue;
+  }
+  body::-webkit-scrollbar-thumb1{
+    background-color: #fff;
+    border: 2px red solid;
+  }
+
+
+  
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1><a href="#">로고</a></h1>
+    <ul class="utill">
+      <li><a href="#">로그인</a></li>
+      <li> | </li>
+      <li><a href="#">회원가입</a></li>
+    </ul>
+    <menu class="gnb">
+      <li><a href="#">menu1</a></li>
+      <li><a href="#">menu2</a></li>
+      <li><a href="#">menu3</a></li>
+      <li><a href="#">menu4</a></li>
+    </menu>
+  </header>
+  <main>
+    메인
+  </main>
+</body>
+</html>
