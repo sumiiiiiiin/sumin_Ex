@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>backgroundEx</title>
+    
+    <style>
+        body{
+            border: solid #333 3px;
+            border-radius: 20px;
+            text-align: center;
+            
+            width:600px;
+            margin:20px auto;
+            padding: 20px;
+            
+        }
+        input{
+            border: 2px solid #333;
+            border-radius: 40px;
+            background-color: rgba(243, 141, 180, 0.49);
+            color: #ddd;
+            font-size: 26px;
+            font-weight: bold;
+
+            width: 400px; 
+            padding: 20px;
+            margin: 5px auto;
+        }
+       form section input:focus{
+            background-color: rgb(240, 53, 190);
+
+        }
+       
+    </style>
+</head>
+<body>
+    <form action="">
+        <section>
+            <input type="text" name="userName" placeholder="🙊 이름을 입력하세요" autofocus/>
+        </section>
+   
+        <section>
+            <input type="text" name="userMail" placeholder="💌 이메일을 입력하세요"autofocus/>
+        </section>
+        <section>
+            <input type="text" name="userNumber" placeholder="📱연락처를 입력하세요"autofocus/>
+        </section>
+    </form>
+    
+</body>
+</html>
