@@ -1,0 +1,408 @@
+@charset 'utf-8';
+
+header{
+    background-color: #333; opacity: 50%;
+    color: #fff;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    position: fixed;
+}
+header .mainlogo{ 
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+header .mainlogo img{
+    display: flex;
+    width: 200px;
+}
+header .topmenu {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+header .topmenu ul{
+    display: flex;   
+}
+header .topmenu ul li{
+    margin: 35px;
+    font-weight: bold;
+}
+header .rightmenu{
+    width: 25%;
+    position: absolute;
+    right: 0;  
+}
+header .rightmenu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-weight: bold;
+    margin: 30px;    
+}
+header .rightmenu ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 12px;
+    padding-right: 15px;
+}
+header .rightmenu ul li img{
+    justify-content: center;
+    align-items: center;
+}
+header .rightmenu ul .orange{
+    display: flex;
+    border: 1px solid orange;
+    background-color: orange;
+    border-radius: 30px;
+    width:150px;
+    position: relative;
+}
+main{
+    width: 100%;
+}
+main .bg-txt{
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 350px; left: 100px;
+    font-style: italic;
+}
+main .bg-txt h1{
+    font-size: 5rem;
+    font-weight: bold;
+} 
+main .bg-txt h1 .small-txt{
+    font-size: 4rem;
+    font-weight: 400;
+    margin-left: 30px;
+}
+main .bg-txt p{
+    margin-left: 30px;
+}
+main .bg+txt .bg{
+    width: 100%;
+}
+main .glance{ 
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+}
+main .glance h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+main .glance #txt{
+    color: #bfb8b8;
+    font-size: 13px;
+    margin-top: 5px;
+}
+main .glance ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+main .glance ul .img-icon{
+    margin-bottom: 25px;
+}
+main .glance ul li{
+    margin: 70px; padding: 25px;
+}
+main .glance .pack .no_1{
+    font-weight: bold;
+    font-size: 30px;
+}
+main .glance .pack .sub{
+    font-size: 15px;
+    color: #bfb8b8;
+    margin-left: 5px;
+    font-weight: bold;
+}
+main .glance p{
+    color: navy;
+    font-weight: bold;
+    font-size: 13px;
+}
+main .glance .small{
+    color: #bfb8b8;
+    font-size: 13px;
+    font-weight: bold;
+}
+main .glance .pack::after{
+    content: "";
+    width: 25px;
+    height: 1px;
+    background-color: #000;
+    margin: 20px 100px;
+    display: block;
+}
+main .business{
+    width: 100%; 
+    text-align: center;
+}
+main .business .top_business{
+    margin-bottom: 25px;
+    position: relative;
+}
+main .business .top_business h2{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+main .business .top_business p{
+    color: #bfb8b8;
+    font-size: 13px;  
+}
+main .business .left_business{
+    background-color: #ddd;
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+main .business .left_business ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+main .business .left_business ul li{
+    margin: 20px;
+}
+main .business h4{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+main .business img{
+    margin: 20px 0;    
+}
+main .business .business_right_img img{
+    width: 50%; height: 50vh;
+    position: absolute;
+    right: 0; bottom: -1300px;
+}
+main .schedule{
+    width: 100%;
+    height: 900px;
+    /*position: relative;*/
+    padding-top: 100px ;
+}
+main .schedule .top_schedule{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 0px 30px;
+}
+main .schedule .top_schedule h2{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+main .schedule .top_schedule p{
+    color: #bfb8b8;
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+main .schedule .schedule_menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .schedule .schedule_menu ul li{
+    margin: 15px;
+    font-weight: bold;
+}
+main .schedule .kakao{
+    width: 100%;
+    height: 40vh;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color:red;
+
+    position: relative;
+}
+main .schedule .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    background-color: orange;
+    color: #fff;
+    font-weight: bold;
+
+    position: absolute;
+    margin-top: 15px;
+    right: 50%; left: 50%; 
+}
+main .contactus{
+    width: 100%;      
+}
+main .contactus .top_contactus{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding: 0px 30px;  
+}
+main .contactus .top_contactus h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+    display: flex;  
+}
+main .contactus .top_contactus p{
+    color: #bfb8b8;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+main .contactus .left_contactus{
+    width: 30%; height: 40vh;
+    background-image: url(./images/mb_bngd.png);
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+main .contactus .left_contactus h3{
+    width: 120px;
+    height: 40px;
+    background-color: orange;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+main .contactus .left_contactus .newstxt{
+   text-align: center;
+   color: #000;
+   font-size: 1.6rem;
+   position: relative;
+}
+main .contactus .left_contactus .newstxt h1{
+    font-weight: bold;
+}
+main .contactus .left_contactus .newstxt p{
+    margin: 20px 0; 
+    font-size: 20px;
+    font-weight: bold;
+}
+main .contactus .left_contactus .newstxt .newsbtn{
+    border: 1px solid #000;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 40%;     
+}
+main .contactus .center_contactus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+}
+main .contactus .center_contactus h2{
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -450px;
+}
+main .contactus .center_contactus ul{
+    margin: -100px 0 0 -80px;
+}
+main .contactus .center_contactus ul li{
+    margin: 20px 0;
+    position: relative;   
+}
+main .contactus .right_contactus{
+    background-image: url(./images/bg_main_recruit.png);
+    background-repeat: no-repeat;
+    width: 30%; height: 40%;
+    position: absolute;
+    right: 0; left: 75vw; bottom: -275vh;
+ }
+main .contactus .right_contactus h6{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: orange;
+    margin:10px;
+}
+main .contactus .right_contactus p{
+    margin-left: 10px;
+    font-weight: bold;
+}
+main .contactus .right_contactus .contactus_btn{
+    border: 1px solid orange;
+    background-color: orange; color: #fff;
+    font-weight: bold;
+    width: 150px; height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 90px;
+    margin-top: 220px;  
+}
+footer .sec-logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #efefef;
+    padding: 20px;
+    margin-top: 100px;
+   
+}
+footer .footer-head{
+    display: flex;
+    font-size: 12px;
+}
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: #4b4a4a;
+    color: #bfb8b8;
+    opacity: 1;
+}
+footer .footer-head img{
+    width: 250px;
+    margin: 30px;
+    position: relative;
+}
+footer .footer-head ul{
+    display: flex;
+    position: absolute;
+    right: 30px;
+    margin: 20px;
+}
+footer .footer-head ul li{
+    padding: 15px;
+}
+footer .address ul{
+    display: flex;
+    font-size: 12px;
+}
+footer .address ul li{
+    margin: 5px 30px;
+}
+footer .address p{
+    margin: 20px 30px;
+    font-size: 12px;
+}
+
+
+
+
