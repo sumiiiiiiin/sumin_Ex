@@ -173,11 +173,6 @@ header .utiil li {
   margin: 10px;
   color: #65656b;
 }
-/*
-.vision .vision-widget li.active {
-  color: var(--point-color);
-  font-weight: bold;
-}*/
 .vision-widget li::before {
   content: "";
   width: 10px;
@@ -186,10 +181,9 @@ header .utiil li {
   display: inline-block;
   margin-right: 5px;
 }
-/*
-.vision .vision-widget li:first-child::before {
+.vision-widget li:hover::before {
   background-color: var(--point-color);
-}*/
+}
 .vision-widget li:hover {
   color: #1d267d;
   cursor: pointer;
