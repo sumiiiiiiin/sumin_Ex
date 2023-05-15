@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* 'Montserrat & Titillium & Nanum Gothic', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nanum+Gothic&family=Titillium+Web:wght@400;600;700&display=swap");
+
+/* 'NanumSquareRound', sans-serif; */
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("../assets/fonts/NanumSquareL.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("../assets/fonts/NanumSquareR.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("../assets/fonts/NanumSquareB.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --font-size-13: 0.813rem;
+  --font-size-15: 0.938rem;
+  --font-size-17: 1.063rem;
+  --font-size-20: 1.25rem;
+  --font-size-25: 1.563rem;
+  --font-size-28: 1.75rem;
+  --font-size-38: 2.375rem;
+  --font-size-40: 2.5rem;
+
+  --point-color: #99f2bd;
+
+  --main-font: "NanumSquareRound", -apple-system, BlinkMacSystemFont,
+    "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+}

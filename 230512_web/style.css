@@ -1,0 +1,434 @@
+@charset "utf-8";
+/* 변수 선언 */
+@import url(./fonts-common.css);
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  max-width: 1900px;
+}
+
+/***** header *****/
+header {
+  position: fixed;
+  width: 100%;
+  margin-top: 15px;
+  z-index: 1; /*다른데 안될시 주석처리하기*/
+}
+header .header-wrapper {
+  max-width: 1700px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+header .header-wrapper h1 {
+  background: url(./images/메인로고.png) no-repeat 0 50% / contain;
+  width: 250px;
+  height: 80px;
+  text-indent: -9999px;
+  margin-left: 30px;
+}
+header .header-wrapper .gp-nav {
+  display: flex;
+  width: 40%;
+  font-size: var(--font-size-20);
+  text-transform: capitalize;
+}
+header .header-wrapper .gp-nav li {
+  width: 25%;
+  font-weight: 600;
+}
+header .header-wrapper .gp-nav li:hover {
+  color: var(--point-color);
+}
+header .utiil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .utiil li {
+  margin: 20px;
+}
+
+/***** contents *****/
+.main-img {
+  width: 100%;
+  position: relative;
+}
+.main-img img {
+  width: 100%;
+  object-fit: fill;
+  position: relative;
+}
+.main-img .maing-img-text {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  color: #fff;
+}
+.main-img .maing-img-text h2 {
+  font-size: var(--font-size-40);
+  font-family: "Titillium Web", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.main-img .maing-img-text p {
+  font-family: var(--main-font);
+}
+.main-img .main-widget {
+  font-size: var(--font-size-20);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.main-img .main-widget li {
+  color: #fff;
+}
+/*
+.main-img .main-widget li:first-child a {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+}*/
+
+.main-img .main-widget li:first-child a::before {
+  font-family: "Material Symbols Outlined";
+  content: "\e5e0";
+  font-size: var(--font-size-38);
+  vertical-align: middle;
+}
+.main-img .main-widget li:last-child a::after {
+  font-family: "Material Symbols Outlined";
+  content: "\e5e1";
+  font-size: var(--font-size-38);
+  vertical-align: middle;
+}
+
+/***** vision *****/
+.vision {
+  width: 100%;
+  background: linear-gradient(to bottom, #fff 50%, #f4f4f4 50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1vw;
+}
+.vision img {
+  width: 400px;
+  height: 400px;
+  margin: 40px 0 40px 200px;
+}
+.vision .vision-text {
+  width: 30%;
+  margin-top: 10vh;
+}
+.vision .vision-text h3 {
+  font-family: "Titillium Web", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: var(--font-size-38);
+  position: relative;
+}
+.vision .vision-text h3::after {
+  content: "";
+  background-color: #99f2bd71;
+
+  width: 150px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  bottom: 11px;
+}
+.vision .vision-text p {
+  margin: 20px 0;
+  font-size: var(--font-size-20);
+  font-family: var(--main-font);
+}
+.vision .view-btn {
+  border: 1px solid #000;
+  margin-top: 50px;
+  padding: 15px 40px;
+  display: inline-block;
+}
+.vision .view-btn:hover {
+  background-color: #2d2727;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 30px;
+}
+.vision .vision-widget {
+  margin-right: 60px;
+}
+.vision .vision-widget li {
+  margin: 10px;
+  color: #65656b;
+}
+.vision .vision-widget li.active {
+  color: var(--point-color);
+  font-weight: bold;
+}
+.vision .vision-widget li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #9ba4b5;
+  display: inline-block;
+  margin-right: 5px;
+}
+.vision .vision-widget li:first-child::before {
+  background-color: var(--point-color);
+}
+.vision .vision-widget li:hover {
+  color: #1d267d;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/***** global ****/
+.global {
+  max-width: 1600px;
+  margin: 90px auto;
+}
+.global h3 {
+  text-align: center;
+  font-family: "Titillium Web", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: var(--font-size-38);
+  margin-top: 30px;
+}
+.global .global-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+}
+.global .global-img li {
+  box-shadow: 15px 15px 5px #9ba4b5;
+}
+.global .global-img li:hover {
+  transform: scale(1.04);
+}
+.global .global-text {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-around;
+}
+.global .global-text li {
+  border-bottom: #65656b 1px solid;
+  width: 304px;
+  padding: 10px;
+  font-size: var(--font-size-20);
+}
+.two-img {
+  max-width: 1200px;
+  margin: 120px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.two-img h4 {
+  margin-bottom: 20px;
+  font-size: var(--font-size-28);
+}
+.two-img p {
+  font-size: var(--font-size-20);
+}
+.two-img .two-img1 {
+  background: url(./images/회사원이미지.png) no-repeat 0 50% / contain;
+  width: 500px;
+  height: 500px;
+}
+.two-img .two-img2 {
+  background: url(./images/계약서.png) no-repeat 0 50% / contain;
+  width: 500px;
+  height: 500px;
+}
+.two-img .two-img-text {
+  text-align: center;
+  margin: 180px auto;
+  color: #fff;
+}
+.two-img .two-img .two-img-text h4 {
+  font-weight: 600;
+}
+.two-img .two-img2 .two-img-text {
+  color: #000;
+}
+.two-img .two-img2 .two-img-text h4 {
+  font-weight: 600;
+}
+
+/***** confidence *****/
+.confidence {
+  background: url(./images/네번째화면배경img.png) no-repeat 50% / cover;
+  height: 664px;
+}
+.confidence .confidence-h3 {
+  font-family: "Titillium Web", Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+.confidence .confidence-h3 h3 {
+  font-size: var(--font-size-38);
+  font-weight: 700;
+  text-align: center;
+  padding-top: 50px;
+  margin: 50px;
+}
+.confidence .confidence-h3 .confidence-text {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.confidence .confidence-text li {
+  text-align: center;
+  padding-top: 50px;
+  width: 300px;
+  height: 322px;
+}
+.confidence .confidence-text li a {
+  display: block;
+  background: no-repeat 50% 25%;
+  background-size: 50px 50px;
+}
+.confidence .confidence-text li:nth-child(1) a {
+  background-image: url(./images/급여icon.png);
+  background-position: 50% 20%;
+}
+.confidence .confidence-text li:nth-child(2) a {
+  background-image: url(./images/계약서icon.png);
+  background-position: 50% 20%;
+}
+.confidence .confidence-text li:nth-child(3) a {
+  background-image: url(./images/복리후생icon.png);
+  background-position: 50% 20%;
+}
+.confidence .confidence-text li a {
+  padding-top: 100px;
+  font-size: var(--font-size-20);
+}
+.confidence .confidence-text li:hover {
+  width: 300px;
+  height: 322px;
+  background-color: #343535;
+  opacity: 0.5;
+  transform: scale(1.05);
+}
+
+/***** bottom *****/
+.bottom {
+  width: 100%;
+  background: url(./images/회사소개img.png) no-repeat 0 50% / cover;
+  height: 752px;
+  display: flex;
+  position: relative;
+  /*z-index: -1;*/
+}
+.bottom .bg-img {
+  width: 45%;
+  color: #fff;
+  /*font-family: "Montserrat", Arial, Helvetica, sans-serif;*/
+  font-size: var(--font-size-38);
+  margin: 250px 0 0 200px;
+}
+.bottom .bg-img p {
+  font-family: var(--main-font);
+}
+.bottom .bg-img p:last-child {
+  margin-top: 5px;
+}
+.bottom .bg-img h3 {
+  border-bottom: 4px solid #fff;
+  width: 85px;
+  padding-bottom: 20px;
+}
+.bottom .view-btn {
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: capitalize;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  transition: all 0.5s;
+}
+.bottom .view-btn:hover {
+  background-color: #2d2727;
+  border: none;
+  border-radius: 30px;
+}
+.bottom .img-text li:hover img {
+  transform: scale(1.07);
+}
+.bottom .img-text {
+  width: 70%;
+  height: 752px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.bottom .img-text li img {
+  width: 350px;
+  height: 350px;
+  padding: 15px;
+}
+.bottom .img-text li figcaption {
+  text-align: center;
+  /*font-family: "Montserrat";*/
+  font-weight: 500;
+}
+
+/***** footer *****/
+footer {
+  width: 100%;
+  height: 120px;
+  background-color: #131313;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer ul li {
+  margin: 10px 0;
+}
+footer .number li:nth-child(1)::before {
+  font-family: "Material Symbols Outlined";
+  content: "\e158";
+  font-size: var(--font-size-25);
+  vertical-align: middle;
+  margin-right: 10px;
+}
+footer .number li:nth-child(2)::before {
+  font-family: "Material Symbols Outlined";
+  content: "\e9cd";
+  font-size: var(--font-size-25);
+  vertical-align: middle;
+  margin-right: 10px;
+}
+footer .footer-icon svg {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+/***** top-button *****/
+.top-btn {
+  width: 45px;
+  height: 45px;
+  background-color: var(--point-color);
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+  position: fixed;
+  right: 5px;
+  bottom: 10px;
+}
