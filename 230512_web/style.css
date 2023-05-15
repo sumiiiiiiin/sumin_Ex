@@ -124,8 +124,8 @@ header .utiil li {
   margin: 40px 0 40px 200px;
 }
 .vision .vision-text {
-  width: 30%;
-  margin-top: 10vh;
+  width: 50%;
+  margin-top: 3vh;
 }
 .vision .vision-text h3 {
   font-family: "Titillium Web", Arial, Helvetica, sans-serif;
@@ -160,18 +160,25 @@ header .utiil li {
   transition: 0.3s;
   border-radius: 30px;
 }
-.vision .vision-widget {
+
+/***** vision-widget *****/
+.vision-widget {
   margin-right: 60px;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 3;
 }
-.vision .vision-widget li {
+.vision-widget li {
   margin: 10px;
   color: #65656b;
 }
+/*
 .vision .vision-widget li.active {
   color: var(--point-color);
   font-weight: bold;
-}
-.vision .vision-widget li::before {
+}*/
+.vision-widget li::before {
   content: "";
   width: 10px;
   height: 10px;
@@ -179,10 +186,11 @@ header .utiil li {
   display: inline-block;
   margin-right: 5px;
 }
+/*
 .vision .vision-widget li:first-child::before {
   background-color: var(--point-color);
-}
-.vision .vision-widget li:hover {
+}*/
+.vision-widget li:hover {
   color: #1d267d;
   cursor: pointer;
   font-weight: bold;
