@@ -57,6 +57,34 @@ header img {
   font-size: 3rem;
   margin-top: 20px;
 }
+.bg-txt ul {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 10%;
+  left: 47%;
+}
+.bg-txt ul li {
+  margin: 10px;
+}
+.bg-txt ul li:nth-child(-n + 2) {
+  color: #ddd;
+}
+.bg-txt ul li:last-child {
+  position: relative;
+}
+.bg-txt ul li:last-child::after {
+  content: "";
+  border: 1px solid #000;
+  display: block;
+  width: 30px;
+  position: absolute;
+  left: 25px;
+  top: 50%;
+}
+
 .bg-txt .play {
   border: 1px solid #4d4747;
   border-radius: 50%;
@@ -100,18 +128,11 @@ header img {
   height: 400px;*/
   margin-bottom: 15px;
 }
-/*
-.img7 img:nth-child(n + 4):nth-child(-n + 5) {
-  height: 200px;
-}*/
 
 /***** business *****/
 .business {
   width: 100%;
-} /*
-.business .business-txt {
-  margin: 15px;
-}*/
+}
 .business .business-txt h3 {
   font-family: "Montserrat", sans-serif;
   text-transform: capitalize;
@@ -119,7 +140,6 @@ header img {
   font-size: 2.3rem;
   margin-top: 20px;
 }
-
 .business .business-txt h3::after {
   content: "";
 
@@ -176,9 +196,6 @@ header img {
   text-align: left;
   margin: 30px;
 }
-/*.youtube .video {
-  aspect-ratio: auto 1 / 1;
-}*/
 
 /***** service *****/
 .service {
@@ -265,9 +282,11 @@ header img {
   width: 200px;
   margin-top: 15px;
 }
+/*
 .location .map {
   max-width: 90%;
-}
+  aspect-ratio: 1 / 1;
+}*/
 
 /***** address *****/
 .address {
