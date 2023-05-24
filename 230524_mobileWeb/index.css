@@ -1,0 +1,384 @@
+@charset "-utf-8";
+
+/* font-family: 'Montserrat', + 'Noto Sans KR', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+KR&display=swap");
+
+/****** header ******/
+body {
+  width: 100%;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+header h1 {
+  background: url(./images/logo.png) no-repeat 0 50% / contain;
+  text-indent: -9999%;
+  width: 250px;
+  height: 60px;
+  margin-left: 10px;
+}
+header img {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+/***** bg+txt *****/
+.bg-txt {
+  width: 100%;
+  height: 100vh;
+  background: pink url(./images/hero-5.png) no-repeat 0 80% / contain;
+  padding: 50px;
+  margin-top: 75px;
+
+  position: relative;
+}
+.bg-txt h3 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+}
+.bg-txt h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  font-size: 3rem;
+  margin-top: 20px;
+}
+.bg-txt .play {
+  border: 1px solid #4d4747;
+  border-radius: 50%;
+  background-color: #4d4747;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/***** main+txt *****/
+.main-txt {
+  width: 100%;
+  margin: 50px auto;
+}
+.main-txt h3 {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 30px;
+}
+.main-txt p {
+  text-align: left;
+  margin: 30px 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 25px;
+}
+.img7 {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.img7 img {
+  max-width: 90%;
+  margin: 0 auto;
+  /*width: 400px;
+  height: 400px;*/
+  margin-bottom: 15px;
+}
+/*
+.img7 img:nth-child(n + 4):nth-child(-n + 5) {
+  height: 200px;
+}*/
+
+/***** business *****/
+.business {
+  width: 100%;
+} /*
+.business .business-txt {
+  margin: 15px;
+}*/
+.business .business-txt h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 2.3rem;
+  margin-top: 20px;
+}
+
+.business .business-txt h3::after {
+  content: "";
+
+  width: 50px;
+  border: 2px solid #000;
+  display: block;
+  margin: 20px auto;
+}
+.business .business-txt p {
+  font-size: 1.3rem;
+  width: 70%;
+  margin: 20px auto;
+  margin-bottom: 50px;
+}
+.business .business-img {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.business .business-img img {
+  max-width: 90%;
+  /* width: 400px;
+  height: 500px;*/
+  margin: 0 auto;
+}
+.business .business-img h4 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 20px 0 10px 0;
+}
+.business .business-img p {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/***** youtube *****/
+.youtube {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ddd;
+}
+.youtube h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 2.3rem;
+  margin-left: 30px;
+  padding-top: 30px;
+  text-align: left;
+}
+.youtube p {
+  text-align: left;
+  margin: 30px;
+}
+/*.youtube .video {
+  aspect-ratio: auto 1 / 1;
+}*/
+
+/***** service *****/
+.service {
+  width: 100%;
+}
+.service h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 2.3rem;
+  margin: 30px 0;
+}
+.service h3::after {
+  content: "";
+  border: 2px solid #000;
+  display: block;
+  width: 50px;
+  margin: 30px auto;
+}
+.service img {
+  max-width: 90%;
+  /*width: 450px;
+  height: 300px;*/
+}
+.service h4 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 20px 0 10px 30px;
+  text-align: left;
+}
+.service p {
+  text-align: left;
+  margin: 30px 30px;
+}
+
+/***** logo *****/
+.logo {
+  width: 100%;
+  background-color: #ddd;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  place-content: center;
+}
+.logo img {
+  max-width: 90%;
+
+  margin: 40px auto;
+}
+
+/***** location *****/
+.location {
+  width: 100%;
+}
+.location h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 2.3rem;
+  margin: 30px 0;
+}
+.location ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location ul li {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.location ul li:nth-child(1):after {
+  content: "";
+  border: 2px solid #000;
+  display: block;
+  width: 200px;
+  margin-top: 15px;
+}
+.location ul li:nth-child(2):after {
+  content: "";
+  border: 1px solid #ddd;
+  display: block;
+  width: 200px;
+  margin-top: 15px;
+}
+.location .map {
+  max-width: 90%;
+}
+
+/***** address *****/
+.address {
+  width: 100%;
+}
+.address h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: left;
+  margin: 30px 0 0 30px;
+}
+.address p {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 10px 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+.address p:last-child {
+  border-bottom: 3px solid #adacac;
+}
+
+/***** talk *****/
+.talk {
+  width: 100%;
+  height: 42vh;
+  background-color: rgba(82, 151, 179, 0.37);
+  color: #fff;
+  margin-top: 70px;
+}
+.talk h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 2.3rem;
+
+  padding: 25px 0;
+}
+.talk p {
+  width: 77%;
+  font-size: 1.34rem;
+  margin: 20px auto;
+}
+.talk .talk-btn {
+  border: 2px solid #fff;
+  display: block;
+
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 30px auto;
+}
+
+/***** dyami *****/
+.dyami {
+  width: 100%;
+  margin-top: 70px;
+}
+.dyami h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.3rem;
+  text-align: left;
+  margin: 10px 0 40px 30px;
+}
+.dyami h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 30px;
+  letter-spacing: 3px;
+  padding: 20px 0;
+}
+.dyami p {
+  text-align: left;
+  margin: 5px 0 0 30px;
+}
+.dyami .dyami-icon {
+  display: flex;
+  justify-content: space-around;
+
+  margin-left: 30px;
+  width: 150px;
+  height: 150px;
+}
+
+/***** footer *****/
+footer {
+  width: 100%;
+  height: 15vh;
+  background-color: #ddd;
+  padding: 35px 0;
+  margin-top: 50px;
+}
+footer p {
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+
+/***** top-btn ****/
+.top-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #1101016e;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
