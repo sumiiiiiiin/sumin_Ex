@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+:root {
+  --font-size-13: 0.813rem;
+  --font-size-15: 0.938rem;
+  --font-size-17.6: 1.1rem;
+  --font-size-20: 1.25rem;
+  --font-size-25: 1.563rem;
+  --font-size-28: 1.75rem;
+  --font-size-38: 2.375rem;
+  --font-size-80: 2.5rem;
+
+  --point-color: #99f2bd;
+
+  --main-font: "NanumSquareRound", -apple-system, BlinkMacSystemFont,
+    "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+}
